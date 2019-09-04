@@ -1,0 +1,9 @@
+kind: "BuildConfig"
+apiVersion: "v1"
+metadata:
+  name: "result-pipeline"
+spec:
+  strategy:
+    jenkinsPipelineStrategy:
+      jenkinsfile: https://raw.githubusercontent.com/erkerc/example-voting-app/master/result/Jenkinsfile
+    type: JenkinsPipeline
